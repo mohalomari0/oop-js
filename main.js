@@ -51,9 +51,9 @@ console.log(Object.entries(person9));
 
 /*__________10__________*/
 const person10 = { name: "Adam", age: 25 };
-const additionalInfo = { gender: "male" };
-const merged = Object.assign({}, person10, additionalInfo);
-console.log(merged);
+Object.assign(person10);
+person10.age = 30;
+console.log(person10);
 
 
 
